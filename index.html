@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=dege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jerbin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Data Scientist</p>
+                <h1>Hi, I'm <span>JERBIN C R</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------about----------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="images/about_me.jfif" >
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub_title">About Me</h1>
+                    <P>Welcome to my portfolio! I specialize in analyzing complex datasets, 
+                    building predictive models, and visualizing data to tell compelling stories.
+                    With experience in various domains, from financial analytics to healthcare,
+                    I leverage advanced statistical techniques and machine learning to deliver 
+                    actionable insights and innovative solutions.</P>
+
+                    <div class="tab_titels">
+                        <p class="tab_links active_links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab_links" onclick="opentab('educations')">Educations</p>
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li><span>Python Program</span><br>Data Science,Machine Learning and Deep Learning</li>
+                            <li><span>Data Science</span><br>Tableau,Matplotlib,Jupyter Notebook,Anaconda,Pandas,Numpy,Scipy</li>
+                            <li><span>Machine Learning</span><br>TensorFlow,PyTorch,Keras,Scikit-learn</li>
+                            <li><span>Deep Learning</span><br>Natural language processing,Neural network</li>
+                            <li><span>Salesforce</span><br>App Creation,Field Creation,Page Layouts,Record Types,Profile Creations,Objectis and Tabs,</li>
+                            <li><span>Frontend</span><br> HTML,CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="educations">
+                        <ul>
+                            <li><span>SSLC - 2015-2016</span><br>Holy Angels Matriculation Higher Secondary School,Chentharai</li>
+                            <li><span>HSC -  2017-2018</span><br>Gov Higher Secondary School,Muncharai</li>
+                            <li><span>BCA -  2018-2021</span><br>Karnataka State Educational Developement Council,Bangalore</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");        
+        var tabcontents = document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname) {
+        // Remove 'active_links' class from all tab links
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active_links");
+        }
+        
+        // Remove 'active_tab' class from all tab contents
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active_tab");
+        }
+    }
+    </script>
+
+
+    
+</body>
+</html>
